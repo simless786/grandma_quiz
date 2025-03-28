@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>외할머니 발표회 퀴즈!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎤 안경신 외할머니 발표회</h1>
+    <p>오늘 외할머니가 부르신 곡은 무엇일까요?</p>
+
+    <div class="quiz">
+      <button onclick="checkAnswer('오 솔레미오')">🌞 오 솔레미오</button>
+      <button onclick="checkAnswer('봄처녀')">🌸 봄처녀</button>
+      <button onclick="checkAnswer('달밤')">🌙 달밤</button>
+      <button onclick="checkAnswer('고향의 봄')">🎵 고향의 봄</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <p id="message"></p>
+      <p class="signature">손녀 양서윤 드림.</p>
+      <button onclick="retry()" id="retryBtn" class="hidden">다시 고르기</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
